@@ -13,10 +13,10 @@ class MainActivity : AppCompatActivity() {
         editTextTotal.setText("0")
         editTextActual.setText("0")
         btnSetPT.setOnClickListener {
-            Toast.makeText(this, "La produccion total: $(editTextTotal.text.toString().toInt() * 80).toString()", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "La produccion total: ${(editTextTotal.text.toString().toInt() * 80).toString()}", Toast.LENGTH_LONG).show()
         }
         btnSetActual.setOnClickListener {
-            Toast.makeText(this, "La produccion $(editTextActual.text.toString().toInt() * 80).toString()", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "La produccion ${(editTextActual.text.toString().toInt() * 80).toString()}", Toast.LENGTH_LONG).show()
         }
         btnPlus5.setOnClickListener {
             editTextActual.setText((editTextActual.text.toString().toInt() + 5).toString())
